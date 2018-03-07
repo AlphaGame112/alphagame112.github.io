@@ -1,0 +1,149 @@
+body {
+  background-color: #2F3336;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.naglowek {
+  text-align: center;
+}
+
+.menu {
+  background-color: #da3939;
+  text-align: center;
+  line-height: 200%;
+  font-size: 1.2em;
+  min-height: 35px;
+  text-transform: uppercase;
+}
+
+.menuone {
+  text-decoration: none;
+  color: #efefef;
+  padding: 7.5px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.menuone:hover {
+  /*color:#0a2b42;*/
+  color: #f7d4d4;
+  background-color: #ac2020;
+}
+
+.activ {
+  background-color: #c22424;
+}
+
+.content {}
+
+.grafika {
+  padding: 2px;
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: row;
+  /*padding-left:10px;
+			padding-right:10px;*/
+}
+
+.leftcolumn {
+  background-color: #191d21;
+  color: #ddd;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 75%;
+}
+
+.rightcolumn {
+  background-color: #242729;
+  float: right;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 21%;
+  color: #ddd;
+}
+
+.foother {
+  /*background-color: #191d21;*/
+  color: #ddd;
+  text-align: center;
+  line-height: 200%;
+  min-height: 40px;
+}
+
+@media (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .container {
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+  .fa {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 467px) {
+  .menuone, .foother {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  h2, h4 {
+    text-align: center;
+  }
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+  position: absolute;
+}
+
+.fa:hover {}
+
+.fa-facebook {
+  color: white;
+  right: 120px;
+}
+
+.fa-facebook:hover {
+  background: #3B5998;
+}
+
+.fa-youtube {
+  color: white;
+  right: 60px;
+}
+
+.fa-youtube:hover {
+  background: #bb0000;
+}
+
+.fa-vimeo {
+  color: white;
+  right: 0px;
+}
+
+.fa-vimeo:hover {
+  background: #45bbff;
+}
+
+.link {
+  text-decoration: none;
+  color: #da3939;
+}
+
+.link:hover {
+  color: #ac2020;
+}

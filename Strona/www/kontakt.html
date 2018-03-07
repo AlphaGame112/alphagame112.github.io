@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+	<META CHARSET="UTF-8">
+	<META name="author" conent="Jarosław Fąfara">
+	<META name="keywords" content="HTML,CSS,Images">
+	<META name="description" content="stare samochody, zabytkowe auta">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
+	<TITLE>Old Cars - Kontakt</TITLE>
+	<LINK rel="stylesheet" type="text/css" href="..\CSS\style.css">
+	<link rel="Shortcut icon" href="..\images\wheel_logo.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		
+
+		#formularz {
+			width: 260px;
+			margin: 0 auto;
+			background-color: #ddd;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		#formularz label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 12px;
+			color: #555555;
+		}
+
+		#formularz textarea,
+		#formularz input {
+			padding: 5px;
+			border-radius: 3px;
+			border: 1px solid #bbb;
+			margin-bottom: 25px;
+			width: 245px;
+		}
+
+		#formularz input#submit {
+			width: 255px;
+			cursor: pointer;
+			margin-bottom: 0px;
+		}
+
+		#formularz input#submit:hover {
+			background-color: #bbb;
+		}
+
+		#formularz p.copy {
+			color: #555555;
+			margin-bottom: 0px;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		#formularz p.copy a {
+			color: #555555;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		h4 {
+			text-align: center;
+		}
+	</style>
+</HEAD>
+
+<BODY>
+	<!--Naglowek-->
+	<div class="naglowek"><a href="../index.html"><img src="..\images\logo.png" style="width:300px;"></a></div>
+	<!--MENU-->
+	<div class="menu">
+		<a href="../index.html" class="menuone">Strona&nbsp;główna</a>
+		<a href="historie.html" class="menuone">Pojazdy</a>
+		<a href="#" class="menuone activ">Kontakt</a>
+		<a href="galeria.html" class="menuone">Galeria</a>
+
+		<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+		<a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+		<a href="https://vimeo.com" class="fa fa-vimeo" target="_blank"></a>
+	</div>
+	<div class="container">
+		<!--Lewa kolumna-->
+		<div class="leftcolumn" style="text-align:center;">
+
+
+			<div class="content" style="text-align:left;">
+				<h1 style="text-align:center;">Kontakt</h1>
+				<h2 style="text-align:center;" id="mail">Kontakt mailowy:</h2>
+				<div id="formularz">
+					<form action="mailto:oldcars@mail.com" method="post" enctype="text/plain">
+
+						<label>Imię i Nazwisko</label>
+						<input name="name" placeholder="Imię i Nazwisko">
+
+						<label>Email</label>
+						<input name="email" type="email" placeholder="przykład@mail.com">
+
+						<label>Wiadomość</label>
+						<textarea name="message" placeholder="Napisz tu wiadomość"></textarea>
+
+						<input id="submit" name="submit" type="submit" value="Wyślij">
+
+					</form>
+				</div>
+
+				<h2 style="text-align:center;">Kontakt telefoniczny:</h2>
+				<h4>Prosimy dzwonić od godziny 8<sup>00</sup> do 16<sup>00</sup></h4>
+				<h3 id="zapytania">Wszelkie zapytania odnośnie samochodów i sprzedarzy:</h3>
+				<h4>+48 123 456 789</h4>
+				<h3 id="wynajem">Sprawy dotyczące wynajmu:</h3>
+				<h4>+48 987 654 321</h4>
+				<h2 style="text-align:center;" id="adres">Adres:</h2>
+				<h3>Warszawa<br>ul. Adama Mickiewicza 34</h3>
+
+			</div>
+			</br>
+		</div>
+		<!--Prawa kolumna-->
+		<div class="rightcolumn">
+			<div>
+				<h2 style="text-align: center;">Menu</h2></div>
+			<div class="content" style="font-size:20px;">
+				<ul>
+					<li><a href="#mail" class="link">Kontakt mailowy</a></li>
+					<li><a href="#zapytania" class="link">Zapytania</a></li>
+					<li><a href="#wynajem" class="link">Wynajem</a></li>
+					<li><a href="#adres" class="link">Adres</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div style="clear:both"></div>
+	<!--STOPKA-->
+	<div class="foother">
+		Wszelkie prawa zastrzeżone ©&nbsp;2018 Dziękuję&nbsp;za&nbsp;wizytę!
+		<div id="czas">
+			<script>
+				function zegar() {
+					return (new Date()).toLocaleTimeString();
+				}
+
+				document.getElementById('czas').innerHTML = zegar();
+
+				setInterval(function() {
+					document.getElementById('czas').innerHTML = zegar();
+				}, 1000);
+			</script>
+		</div>
+	</div>
+</BODY>
+
+</HTML>

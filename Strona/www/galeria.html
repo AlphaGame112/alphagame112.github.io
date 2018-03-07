@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+	<META CHARSET="UTF-8">
+	<META name="author" conent="Jarosław Fąfara">
+	<META name="keywords" content="HTML,CSS,Images">
+	<META name="description" content="stare samochody, zabytkowe auta">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
+	<TITLE>Old Cars - Galeria</TITLE>
+	<LINK rel="stylesheet" type="text/css" href="..\CSS\style.css">
+	<link rel="Shortcut icon" href="..\images\wheel_logo.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<style>
+		.mySlides {
+			width: 60%;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.mySlides2 {
+			width: 40%;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.w3-animate-fading {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+		}
+
+		@media (max-width: 800px) {
+			.grafika_content,
+			h2 {
+				text-align: center;
+			}
+		}
+
+		.photo {
+			width: 1500px;
+			height: 900px;
+			object-fit: cover;
+		}
+
+		.rightcolumn {
+			text-align: center;
+		}
+	</style>
+</HEAD>
+
+<BODY>
+	<!--Naglowek-->
+	<div class="naglowek"><a href="../index.html"><img src="..\images\logo.png" style="width:300px;"></a></div>
+	<!--MENU-->
+	<div class="menu">
+		<a href="../index.html" class="menuone">Strona&nbsp;główna</a>
+		<a href="historie.html" class="menuone">Pojazdy</a>
+		<a href="kontakt.html" class="menuone">Kontakt</a>
+		<a href="#" class="menuone activ">Galeria</a>
+
+		<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+		<a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+		<a href="https://vimeo.com" class="fa fa-vimeo" target="_blank"></a>
+	</div>
+	<div class="container">
+		<!--Lewa kolumna-->
+		<div class="leftcolumn" style="text-align:center;">
+
+			<div class="content">
+
+
+				<h1>Galeria</h1>
+
+			</div>
+
+
+			<div class="bxslider slider">
+				<div><img class="photo" src="../images/jacob-spence-392804-unsplash.jpg"></div>
+				<div><img class="photo" src="../images/vittorio-sommella-110611-unsplash.jpg"></div>
+				<div><img class="photo" src="../images/kevin-clark-75518-unsplash.jpg"></div>
+				<div><img class="photo" src="../images/dan-gold-223935-unsplash.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/14573619163_dc374caa58_b.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/jorg-buntrock-70916-unsplash.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/Mercedes-Benz_600_vl_silver_TCE.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/michael-mongin-22820-unsplash.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/Porsche_944_Cabrio_front_20070928.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/Renault_5_first_generation_light_blue.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/Rolls_Royce_Silver_Shadow_I,_Bj._1967_(2005-09-17_Sp)-2.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/Volvo_Amazon_P121_B18_–_Frontansicht,_2._Juli_2013,_Münster.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/Volvo_PV51_Sedan_1937_2.jpg"></div>
+				<div><img class="photo" src="../images/Pojazdy/wesley-quinn-405335-unsplash.jpg"></div>
+			</div>
+			<script>
+				$(document).ready(function() {
+					$('.slider').bxSlider();
+				});
+			</script>
+			<script>
+				$('.bxslider').bxSlider({
+					auto: true,
+					autoControls: true,
+					stopAutoOnClick: true,
+					pager: true,
+					slideWidth: 1200
+				});
+			</script>
+
+
+		</div>
+		<!--Prawa kolumna-->
+		<div class="rightcolumn">
+			<div>
+				<h2>Galeria w skrócie</h2></div>
+			<div class="content grafika_content">
+				<img class="mySlides2 w3-animate-fading" src="../images/vittorio-sommella-110611-unsplash.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/kevin-clark-75518-unsplash.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/dan-gold-223935-unsplash.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/14573619163_dc374caa58_b.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/jacob-spence-392804-unsplash.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/jorg-buntrock-70916-unsplash.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/Mercedes-Benz_600_vl_silver_TCE.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/michael-mongin-22820-unsplash.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/Porsche_944_Cabrio_front_20070928.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/Renault_5_first_generation_light_blue.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/Rolls_Royce_Silver_Shadow_I,_Bj._1967_(2005-09-17_Sp)-2.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/Volvo_Amazon_P121_B18_–_Frontansicht,_2._Juli_2013,_Münster.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/Volvo_PV51_Sedan_1937_2.jpg" class="photo">
+				<img class="mySlides2 w3-animate-fading" src="../images/Pojazdy/wesley-quinn-405335-unsplash.jpg" class="photo">
+			</div>
+
+		</div>
+	</div>
+	<div style="clear:both"></div>
+	<!--STOPKA-->
+	<div class="foother">
+		Wszelkie prawa zastrzeżone ©&nbsp;2018 Dziękuję&nbsp;za&nbsp;wizytę!
+		<div id="czas">
+			<script>
+				function zegar() {
+					return (new Date()).toLocaleTimeString();
+				}
+
+				document.getElementById('czas').innerHTML = zegar();
+
+				setInterval(function() {
+					document.getElementById('czas').innerHTML = zegar();
+				}, 1000);
+			</script>
+		</div>
+	</div>
+</BODY>
+
+</HTML>

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<META CHARSET="UTF-8">
+	<META name="author" conent="AlphaGame">
+	<META name="keywords" content="HTML,CSS,Images">
+	<META name="description" content="Szablon strony">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
+	<TITLE>AlphaGame - Test</TITLE>
+	<LINK rel="stylesheet" type="text/css" href="..\CSS\style.css">
+	<link rel="Shortcut icon" href="..\images\favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="..\css\fontello.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+	}
+	.fa:hover {
+		opacity: 0.7;
+	}
+	.fa-android {
+	  background: #a4c639;
+	  color: white;
+	}
+	</style>
+</HEAD>
+<BODY>
+<!--Naglowek-->
+<div class="naglowek"><img src="..\images\game2.png" style="width:300px;"></div>
+	<!--MENU-->
+<div class="menu">
+	<a href="..\index.html">Strona&nbsp;główna</a>
+	<a href="#"  class="activ">Test</a>
+	<a href="#">Kontakt</a>
+	<a href="#">Galeria</a>
+</div>
+<div class="container">
+	<!--Lewa kolumna-->
+	<div class="leftcolumn" style="text-align:center;">
+		
+		
+		<div class="content" style="text-align:left;">
+		<h1>Strona testowa</h1>
+		<i class="icon-mail-alt"></i>
+		<i class="demo-icon icon-picture"></i>
+		<a href="https://developer.android.com/index.html" target="_blank" class="fa fa-android"></a>
+			
+		</div>
+		
+		
+		
+		</br>
+	</div>
+	<!--Prawa kolumna-->
+	<div class="rightcolumn">
+		<div><h2>Prawa Kolumna</h2></div>
+		<div class="content" >
+			
+		</div>
+		
+	</div>
+		
+</div>
+
+<div style="clear:both"></div>
+	<!--STOPKA-->
+<div class="foother">
+	Wszelkie prawa zastrzeżone ©&nbsp;2018 Dziękuję&nbsp;za&nbsp;wizytę!
+	<div id="czas">
+		<script>function zegar()
+		{
+			return (new Date()).toLocaleTimeString();
+		}
+
+		document.getElementById('czas').innerHTML = zegar();
+
+		setInterval(function() 
+		{
+		document.getElementById('czas').innerHTML = zegar();     
+		}, 1000);</script>
+	</div>
+</div>
+</BODY>
+</HTML>
