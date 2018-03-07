@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AlphaGame</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif;
+      color: #FFF;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    body {
+      background-image: url('bridge.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+      margin: 0;
+    }
+
+    .choice {
+      width: 180px;
+      height: 50px;
+      border-radius: 10px;
+
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+
+    }
+
+    h2 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    .choice:hover {
+
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+  var fontMax = 40, fontMin = 14;
+
+function sizeBodyFont() {
+  var fontSize = ((screen.width / window.innerWidth) * 10);
+  document.body.style.fontSize = Math.min(Math.max(fontSize,fontMin),fontMax) + 'px';
+}
+
+sizeBodyFont();
+
+(function(el) {
+  window.addEventListener('resize', sizeBodyFont);
+}(document.querySelector('#test')))
+  </script>
+  <img src="logo.png" style="width: 100px; height: auto;">
+  <div style="text-align:center; margin:auto; vertical-align: middle; margin-top:8%">
+    <h1 class="hello" style="font-size: calc(4vw * 2);">WITAJ</h1>
+    <hr style="margin:auto; width:30%; margin-top:-2%;">
+    <br>
+    <div class="menu">
+      <a href="old_cars\index.html">
+        <div class="choice">
+          <h2>Old cars</h2>
+        </div>
+      </a>
+    </div>
+</body>
+
+</html>
