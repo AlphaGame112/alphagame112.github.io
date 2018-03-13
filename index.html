@@ -36,7 +36,8 @@
       position: relative;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, 0%);
+      transform: translate(-110%, 0%);
+      margin: 10px;
     }
 
     h2 {
@@ -65,7 +66,19 @@
       font-size: calc(4vw + 5vh + 2vmin);
     }
 
+    .cars {
+      border: 1px solid #FFF;
+      border-radius: 10px;
+      padding: 7%;
+    }
 
+    .menu {
+      display: flex;
+    }
+    @media (max-width:450px;)
+    {
+      .menu {display: inline-block;}
+    }
   </style>
 </head>
 
@@ -91,10 +104,16 @@
     <div class="menu">
       <div class="choice">
         <a href="Strona\index.html">
-          <h2 class="cars" style="border: 1px solid #FFF;border-radius: 10px; padding: 7%;">Old cars</h2>
+          <h2 class="cars">Old cars</h2>
+        </a>
+      </div>
+      <div class="choice">
+        <a href="https://github.com/AlphaGame112" target="_blank">
+          <h2 class="cars">Github</h2>
         </a>
       </div>
     </div>
 </body>
 
 </html>
+
