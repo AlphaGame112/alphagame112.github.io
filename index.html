@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <link rel="Shortcut icon" href="logo_A.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body,
     h1 {
@@ -16,7 +17,8 @@
     body,
     html {
       height: 100%;
-      background-color:#16332F;
+
+      background-color: #16332F;
     }
 
     body {
@@ -31,13 +33,10 @@
       width: 180px;
       height: 50px;
       border-radius: 10px;
-
       position: relative;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-
-
+      transform: translate(-50%, 0%);
     }
 
     h2 {
@@ -54,38 +53,47 @@
     }
 
     .choice:hover {
-
       color: #ddd;
     }
+
+    .cars:hover {
+      background-color: #fff;
+      color: #031215;
+    }
+
+    .hello {
+      font-size: calc(4vw + 5vh + 2vmin);
+    }
+
+
   </style>
 </head>
 
 <body>
   <script>
-  var fontMax = 40, fontMin = 14;
+    var fontMax = 70,
+      fontMin = 14;
 
-function sizeBodyFont() {
-  var fontSize = ((screen.width / window.innerWidth) * 10);
-  document.body.style.fontSize = Math.min(Math.max(fontSize,fontMin),fontMax) + 'px';
-}
-
-sizeBodyFont();
-
-(function(el) {
-  window.addEventListener('resize', sizeBodyFont);
-}(document.querySelector('#test')))
+    function sizeBodyFont() {
+      var fontSize = ((screen.width / window.innerWidth) * 10);
+      document.body.style.fontSize = Math.min(Math.max(fontSize, fontMin), fontMax) + 'px';
+    }
+    sizeBodyFont();
+    (function(el) {
+      window.addEventListener('resize', sizeBodyFont);
+    }(document.querySelector('#test')))
   </script>
-  <a href="https://github.com/AlphaGame112"><img src="logo.png" style="width: 100px; height: auto;"></a>
+  <a href="https://github.com/AlphaGame112" target="_blank"><img src="logo.png" style="width: 100px; height: auto;"></a>
   <div style="text-align:center; margin:auto; vertical-align: middle; margin-top:8%">
-    <h1 class="hello" style="font-size: calc(4vw * 2);">WITAJ</h1>
+    <h1 class="hello">WITAJ</h1>
     <hr style="margin:auto; width:30%; margin-top:-2%;">
-    <br>
+    <br><br>
     <div class="menu">
-      <a href="Strona\index.html">
-        <div class="choice">
-          <h2>Old cars</h2>
-        </div>
-      </a>
+      <div class="choice">
+        <a href="Strona\index.html">
+          <h2 class="cars" style="border: 1px solid #FFF;border-radius: 10px; padding: 7%;">Old cars</h2>
+        </a>
+      </div>
     </div>
 </body>
 
