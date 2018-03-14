@@ -75,9 +75,92 @@
     .menu {
       display: flex;
     }
-    @media (max-width:450px;)
-    {
-      .menu {display: inline-block;}
+
+    @media (max-width:450px;
+    ) {
+      .menu {
+        display: inline-block;
+      }
+      
+    }
+
+    .dropbtn {
+
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {}
+
+    .dropdown {
+      position: relative;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+
+      min-width: 160px;
+      overflow: auto;
+
+      z-index: 1;
+      margin-left: 10px;
+    }
+
+    .dropdown-content a {
+      color: #FFF;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 2px;
+
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .minichoice {
+      margin: 6px;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 400px;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      height: 100px;
     }
   </style>
 </head>
@@ -96,16 +179,47 @@
       window.addEventListener('resize', sizeBodyFont);
     }(document.querySelector('#test')))
   </script>
-  <a href="https://github.com/AlphaGame112" target="_blank"><img src="logo.png" style="width: 100px; height: auto;"></a>
+  <script>
+    /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  <div class="container" style="width: 350px;" class="main">
+    <a href="https://github.com/AlphaGame112" target="_blank"><img src="logo.png" class="image" style="width: 100px; height: auto;"><div class="overlay">
+    <div class="text">AlphaGame</div>
+  </div></a>
+  </div>
   <div style="text-align:center; margin:auto; vertical-align: middle; margin-top:8%">
     <h1 class="hello">WITAJ</h1>
     <hr style="margin:auto; width:30%; margin-top:-2%;">
     <br><br>
     <div class="menu">
       <div class="choice">
-        <a href="Strona\index.html">
-          <h2 class="cars">Old cars</h2>
+        <a class="dropdown">
+          <h2 onclick="myFunction()" class="cars dropbtn" style="border: 1px solid #FFF; margin-bottom:-6%">Projekty</h2>
         </a>
+        <div id="myDropdown" class="dropdown-content">
+          <h3><a href="Strona/index.html" class="cars minichoice">Old cars</a></h3>
+          <!--<h3><a href="#about" class="cars minichoice">Projekt</a></h3>
+          <h3><a href="#contact" class="cars minichoice">Projekt</a></h3>-->
+        </div>
       </div>
       <div class="choice">
         <a href="https://github.com/AlphaGame112" target="_blank">
@@ -113,7 +227,7 @@
         </a>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
-
