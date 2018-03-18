@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AlphaGame - Construct</title>
+  <meta charset="UTF-8">
+  <link rel="Shortcut icon" href="../logo_A.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif;
+      color: #FFF;
+    }
+
+    body,
+    html {
+      height: 100%;
+
+      background-color: #16332F;
+    }
+
+    body {
+      background-image: url('../bridge.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+      margin: 0;
+    }
+
+    .choice {
+      width: 180px;
+      height: 50px;
+      border-radius: 10px;
+      position: relative;
+      top: 50%;
+      left: 44.5%;
+      transform: translate(-110%, 0%);
+      margin: 10px;
+    }
+
+    h2 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    .choice:hover {
+      color: #ddd;
+    }
+
+    .cars:hover {
+      background-color: #fff;
+      color: #031215;
+    }
+
+    .hello {
+      font-size: calc(4vw + 5vh + 2vmin);
+    }
+    .hello_mini {
+      font-size: calc(4vw + 5vh + 2vmin);
+    }
+
+    .cars {
+      border: 1px solid #FFF;
+      border-radius: 10px;
+      padding: 7%;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    @media (max-width:450px;
+    ) {
+      .menu {
+        display: inline-block;
+      }
+
+    }
+    @media (max-width:700px;
+    ) {
+      .choice {
+
+        white-space: nowrap;
+      }
+
+    }
+
+    .dropbtn {
+
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {}
+
+    .dropdown {
+      position: relative;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+
+      min-width: 160px;
+      overflow: auto;
+
+      z-index: 1;
+      margin-left: 10px;
+    }
+
+    .dropdown-content a {
+      color: #FFF;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 2px;
+
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .minichoice {
+      margin: 6px;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 350px;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      height: 80px;
+    }
+    
+  </style>
+</head>
+
+<body onselectstart="return false" onselect="return false" oncopy="return false">
+  <script>
+    var fontMax = 70,
+      fontMin = 14;
+
+    function sizeBodyFont() {
+      var fontSize = ((screen.width / window.innerWidth) * 10);
+      document.body.style.fontSize = Math.min(Math.max(fontSize, fontMin), fontMax) + 'px';
+    }
+    sizeBodyFont();
+    (function(el) {
+      window.addEventListener('resize', sizeBodyFont);
+    }(document.querySelector('#test')))
+  </script>
+  <script>
+    /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  <div class="container" style="width: 350px;" class="main">
+    <a href="../index.html" target="_blank"><img src="home_logo.png" class="image" style="width: 60px; height: auto; padding:10px"><div class="overlay">
+    <div class="text">Strona Główna</div>
+  </div></a>
+  </div>
+  <div style="text-align:center; margin:auto; vertical-align: middle; margin-top:8%">
+    <h1 class="hello">CONSTRUCT</h1>
+    <h4 class="hello hello_mini" style="font-size:30px;margin-top:-4%; margin-bottom:3%">Projekty</h4>
+    <hr style="margin:auto; width:30%; margin-top:-2%;">
+    <br><br>
+    <div class="menu">
+      <div class="choice" style="margin-left:0;">
+        <a href="MAŁPA/index.html" target="_blank">
+          <h2 class="cars" style="padding-left:4%">Janusz&nbsp;Simulator</h2>
+        </a>
+      </div>
+      <div class="choice">
+        <a href="New project/index.html" target="_blank">
+          <h2 class="cars">Air&nbsp;Jumper</h2>
+        </a>
+      </div>
+      <div class="choice">
+        <a href="New project horror/index.html" target="_blank">
+          <h2 class="cars">School&nbsp;Horror</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
