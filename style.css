@@ -1,0 +1,112 @@
+body,
+html {
+  height: 100vh;
+  background-color: #16332F;
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+  box-sizing: border-box;
+  margin: 0;
+  user-select: none;
+}
+body{
+  background-image: url('bridge.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  width: 100px; height: auto;
+}
+#github{
+  align-self: flex-start;
+}
+#github > a{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.text{
+  margin-left: 30px;
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+  transform: translate(0,-70px);
+}
+
+#github:hover .text{
+  transform: translate(0,0);
+}
+#central{
+  font-size: 17vmin;
+  font-weight: 600;
+  margin-top: 16vh;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 800px) {
+  #central{
+    font-size: 20vmin;
+  }
+  hr{
+    display: none;
+  }
+}
+@media (max-height: 480px) {
+  #central{
+    margin-top: 0;
+  }
+  
+}
+
+hr{
+  width: 400px;
+}
+
+#container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.but{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+  margin: 10px;
+  min-width: 160px;
+}
+.but:hover{
+  background-color: #fff;
+  color: #16332F;
+}
+#container > a{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  color: white;
+  padding: 15px 5px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+  margin: 10px;
+  min-width: 160px;
+  text-decoration: none;
+  text-align: center;
+}
+#container > a:hover{
+  background-color: #fff;
+  color: #16332F;
+}
